@@ -5,6 +5,9 @@ import random
 
 class the_quiz():
     def __init__(self, root):
+        self.root = root
+        super().__init__()
+
         self.window = root
         self.window.title("Quiz")
 
