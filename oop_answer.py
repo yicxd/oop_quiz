@@ -173,37 +173,37 @@ def start_quiz():
     the_quiz(quiz_window)
     quiz_window.mainloop()
 
-#a welcome page
-welcome_window = tk.Tk()
-welcome_window.title("Welcome to Hell!")
-welcome_window.geometry("500x400")
-welcome_window.configure(bg="#fff0f5")
+    #a welcome page
+    welcome_window = tk.Tk()
+    welcome_window.title("Welcome to Hell!")
+    welcome_window.geometry("500x400")
+    welcome_window.configure(bg="#fff0f5")
 
-screen_width = welcome_window.winfo_screenwidth()
-screen_height = welcome_window.winfo_screenheight()
-welcome_window.geometry(f"500x400+{(screen_width-500)//2}+{(screen_height-400)//2}")
+    screen_width = welcome_window.winfo_screenwidth()
+    screen_height = welcome_window.winfo_screenheight()
+    welcome_window.geometry(f"500x400+{(screen_width-500)//2}+{(screen_height-400)//2}")
 
-header = tk.Label(welcome_window, text="(◕‿◕) Quiz Program (◕‿◕)", 
-    font=("Comic Sans MS", 18, "bold"), bg="#fff0f5", fg="#8b008b")
-header.pack(pady=30)
+    header = tk.Label(welcome_window, text="(◕‿◕) Quiz Program (◕‿◕)", 
+        font=("Comic Sans MS", 18, "bold"), bg="#fff0f5", fg="#8b008b")
+    header.pack(pady=30)
 
-cat_art = tk.Label(welcome_window, text="""
-∧＿∧
-(｡･ω･｡)つ━☆・*。
-⊂　　 ノ 　　　・゜+.
- しーＪ　　　°。+ *´¨)
-　　　　　　.· ´¸.·*´¨) ¸.·*¨)
-　　　　　　　　(¸.·´ (¸.·'* ☆
-                """,
-                font=("Courier New", 10),
-                bg="#fff0f5",
-                fg="#ff69b4")
-cat_art.pack()
+    cat_art = tk.Label(welcome_window, text="""
+    ∧＿∧
+    (｡･ω･｡)つ━☆・*。
+    ⊂　　 ノ 　　　・゜+.
+    しーＪ　　　°。+ *´¨)
+    　　　　　　.· ´¸.·*´¨) ¸.·*¨)
+    　　　　　　　　(¸.·´ (¸.·'* ☆
+                    """,
+                    font=("Courier New", 10),
+                    bg="#fff0f5",
+                    fg="#ff69b4")
+    cat_art.pack()
 
-start_btn = tk.Button(welcome_window,
-    text="START!", font=("Comic Sans MS", 14, "bold"),
-    bg="#ff69b4", fg="white", bd=0, padx=20,
-    pady=10, command=start_quiz)
-start_btn.pack(pady=30)
+    start_btn = tk.Button(welcome_window,
+        text="START!", font=("Comic Sans MS", 14, "bold"),
+        bg="#ff69b4", fg="white", bd=0, padx=20,
+        pady=10, command=start_quiz)
+    start_btn.pack(pady=30)
 
-welcome_window.mainloop()
+    welcome_window.mainloop()

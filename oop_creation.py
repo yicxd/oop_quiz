@@ -7,8 +7,7 @@ from PyQt6.QtGui import QFont, QPalette, QColor #these are for aesthetics
 from PyQt6.QtCore import Qt #for alignment
 
 class quiz_create(QWidget):
-    def __init__(self, create):
-        self.create = create
+    def __init__(self):
         super().__init__()
 
         self.setWindowTitle("Quiz Creator") #title of the window
@@ -113,14 +112,14 @@ class quiz_create(QWidget):
         self.d.clear()
         self.correct.setCurrentIndex(0)
 
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv) #this is the application that will open
-    
-    font = QFont()
-    font.setFamily("Arial")
-    app.setFont(font)
-    
-    window = quiz_create()
-    window.show()
-    sys.exit(app.exec())
+    def start_create():
+        if __name__ == "__main__":
+            app = QApplication(sys.argv) #this is the application that will open
+            
+            font = QFont()
+            font.setFamily("Arial")
+            app.setFont(font)
+            
+            window = quiz_create()
+            window.show()
+            sys.exit(app.exec())
