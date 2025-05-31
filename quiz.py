@@ -18,21 +18,21 @@ def pick_you_want():
 
 def launch_creator(): #launches the creator fie
     from PyQt6.QtWidgets import QApplication
-    from oop_creation import quiz_create
+    from oop_creation import QuizCreate
     
     app = QApplication(sys.argv)
     font = app.font()
     font.setFamily("Arial")
     app.setFont(font)
     
-    window = quiz_create()
+    window = QuizCreate()
     window.show()
     sys.exit(app.exec())
 
 def launch_answer(): #launches the quiz answering file
-    from oop_answer import the_quiz
+    from oop_answer import TheQuiz
     root = tk.Tk()
-    app = the_quiz(root)
+    app = TheQuiz(root)
     root.mainloop()
 
 def main():

@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import random
 
-class the_quiz():
+class TheQuiz():
     def __init__(self, root):
         self.root = root
         super().__init__()
@@ -170,7 +170,7 @@ class the_quiz():
 def start_quiz():
     welcome_window.destroy()
     quiz_window = tk.Tk()
-    the_quiz(quiz_window)
+    TheQuiz(quiz_window)
     quiz_window.mainloop()
 
     #a welcome page

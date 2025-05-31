@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtGui import QFont, QPalette, QColor #these are for aesthetics
 from PyQt6.QtCore import Qt #for alignment
 
-class quiz_create(QWidget):
+class QuizCreate(QWidget):
     def __init__(self):
         super().__init__()
 
@@ -120,6 +120,6 @@ class quiz_create(QWidget):
             font.setFamily("Arial")
             app.setFont(font)
             
-            window = quiz_create()
+            window = QuizCreate()
             window.show()
             sys.exit(app.exec())
